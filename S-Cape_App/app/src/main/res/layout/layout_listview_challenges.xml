@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/spark_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp"
+            app:sparkbutton_activeImage="@drawable/ic_star_full"
+            app:sparkbutton_inActiveImage="@drawable/ic_star_empty"
+            app:sparkbutton_iconSize="40dp"
+            app:sparkbutton_primaryColor="@color/Star_Color"
+            app:sparkbutton_secondaryColor="@color/Star_pop_red" />
+
+        <TextView
+            android:text="Challenge"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_Challenge_Value"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

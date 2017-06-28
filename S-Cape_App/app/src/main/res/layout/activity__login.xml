@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ajp.s_cape_app.Activities.Activity_Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageView_LoginScreen"
+            app:srcCompat="@drawable/s_cape"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            android:hint="@string/email"
+            android:background="@color/SCape_White"
+            android:ems="10"
+            android:id="@+id/editTextUsernameSignIn" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@color/SCape_White"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:ems="10"
+            android:id="@+id/editTextPasswordSignIn" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Forgot Password"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/SCape_White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:id="@+id/textView_ForgotPassword" />
+
+        </FrameLayout>
+
+        <Button
+            android:layout_marginTop="53dp"
+            android:text="@string/sign_in"
+            android:textSize="18sp"
+            android:textColor="@color/SCape_White"
+            android:background="@color/SCape_Light_Blue"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/buttonSignIn" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Not a member? Sign up!"
+            android:layout_marginTop="18dp"
+            android:textSize="18sp"
+            android:textColor="@color/SCape_White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:id="@+id/buttonCreateAccount" />
+    </FrameLayout>
+
+</LinearLayout>

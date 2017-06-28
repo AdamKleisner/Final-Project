@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView_itinerary_bg"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1"
+    android:nestedScrollingEnabled="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_TitleIntenerary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/flightPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/SCape_Blue"
+            android:layout_gravity="center"
+            android:text="@string/city"
+            android:id="@+id/flightInfo"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/hotelPic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/SCape_Blue"
+            android:text="@string/city"
+            android:id="@+id/HotelInfo" />
+
+    </LinearLayout>
+
+<!--START FRAME-->
+        <TextView
+            android:text="Events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/SCape_Blue"
+            android:id="@+id/textView_Itinerary_EventsTitle" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listEvents"
+        android:layout_weight="2.59"
+        android:paddingBottom="10dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:nestedScrollingEnabled="true"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:layout_height="350dp">
+
+    </ListView>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+
+
+            </LinearLayout>
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/material_design_android_floating_action_menu_itenerary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                fab:menu_animationDelayPerItem="55"
+                fab:menu_backgroundColor="@android:color/transparent"
+                fab:menu_buttonSpacing="0dp"
+                fab:menu_colorNormal="@color/SCape_Green"
+                fab:menu_colorPressed="#20a900"
+                fab:menu_colorRipple="@color/SCape_Blue"
+                fab:menu_fab_size="normal"
+                fab:menu_icon="@drawable/fab_add"
+                fab:menu_labels_colorNormal="@color/SCape_Grey"
+                fab:menu_labels_colorPressed="#444"
+                fab:menu_labels_colorRipple="@color/SCape_Blue"
+                fab:menu_labels_cornerRadius="3dp"
+                fab:menu_labels_ellipsize="none"
+                fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                fab:menu_labels_margin="0dp"
+                fab:menu_labels_maxLines="-1"
+                fab:menu_labels_padding="8dp"
+                fab:menu_labels_position="left"
+                fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                fab:menu_labels_showShadow="true"
+                fab:menu_labels_singleLine="false"
+                fab:menu_labels_textColor="#f2f1f1"
+                fab:menu_labels_textSize="15sp"
+                fab:menu_openDirection="up"
+                fab:menu_shadowColor="#66AA77"
+                fab:menu_shadowRadius="1dp"
+                fab:menu_shadowXOffset="1dp"
+                fab:menu_shadowYOffset="1dp"
+                fab:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/material_design_floating_action_menu_Directions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/SCape_Green"
+                    fab:fab_colorPressed="#20a900"
+                    fab:fab_colorRipple="@color/SCape_Blue"
+                    fab:fab_label="Challenges"
+                    fab:fab_size="mini"
+                    android:src="@drawable/ic_challenges" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/material_design_floating_action_menu_Translate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/SCape_Green"
+                    fab:fab_colorPressed="#20a900"
+                    fab:fab_colorRipple="@color/SCape_Blue"
+                    fab:fab_label="Translate"
+                    fab:fab_size="mini"
+                    android:src="@drawable/ic_action_name"
+                    />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/material_design_floating_action_menu_End_Trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/SCape_Green"
+                    fab:fab_colorPressed="#20a900"
+                    fab:fab_colorRipple="@color/SCape_Blue"
+                    fab:fab_label="Finish Trip"
+                    fab:fab_size="mini"
+                    android:src="@drawable/ic_visitplace_item"
+                    />
+
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </FrameLayout>
+        <!--end frame-->
+
+    </LinearLayout>
+
+</ScrollView>

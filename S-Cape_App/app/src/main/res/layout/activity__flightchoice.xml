@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:inputType="textPersonName"
+        android:hint="Departing date"
+        android:ems="10"
+        android:id="@+id/editTextDepartingDate" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:inputType="textPersonName"
+        android:hint="Arriving date"
+        android:ems="10"
+        android:id="@+id/editTextReturnDate" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout_Flights">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout_Flights_InFrame">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    fab:srcCompat="@drawable/image_plane_ticket"
+                    android:id="@+id/imageView_FlightChoice"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="Flight Information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/SCape_Blue"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView_FlightActivity_FlightData"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/material_design_floating_action_button_Flights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/SCape_Green"
+            fab:fab_colorPressed="#20a900"
+            fab:fab_colorRipple="@color/SCape_Blue"
+            fab:fab_label="Custom Event"
+            fab:fab_size="mini"
+            android:src="@drawable/fab_add"
+            android:layout_gravity="end|bottom"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

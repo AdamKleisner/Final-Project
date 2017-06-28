@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "372223392830",
+    "firebase_url": "https://fir-cape.firebaseio.com",
+    "project_id": "fir-cape",
+    "storage_bucket": "fir-cape.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372223392830:android:e6d76b7658a1a6aa",
+        "android_client_info": {
+          "package_name": "com.example.ajp.s_cape_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372223392830-omdmhk454jo3irj1sfoh5fvv5f85i74s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ajp.s_cape_app",
+            "certificate_hash": "23f8eb1f84741c8ee4b673ec773d4287b359434b"
+          }
+        },
+        {
+          "client_id": "372223392830-d8o4h8a4tkim712d9iir7q65lfrhon8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL-_6j49Zh73LRGPvs-s0q8h2zMm787uo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372223392830-d8o4h8a4tkim712d9iir7q65lfrhon8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

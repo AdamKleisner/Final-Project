@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity__api_layouts">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:text="REPLACE BY PULL"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/SCape_White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_API_PULL_TITLE" />
+    </FrameLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerFoodType"
+        android:entries="@array/foodType"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/foodList"/>
+
+</LinearLayout>

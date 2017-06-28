@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:maxHeight="50dp"
+        android:maxWidth="75dp"
+        android:layout_gravity="center"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:id="@+id/imageView_GridView_EventImage" />
+
+    <TextView
+        android:text="Event Type"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/SCape_Light_Blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_GridView_EventType" />
+</LinearLayout>

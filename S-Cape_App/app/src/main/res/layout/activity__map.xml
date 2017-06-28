@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerState"
+        android:entries="@array/states"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCity"
+        android:entries="@array/Georgia"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
+        android:id="@+id/outerFrameMap">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/material_design_floating_action_button_Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/SCape_Green"
+            fab:fab_colorPressed="#20a900"
+            fab:fab_colorRipple="@color/SCape_Blue"
+            fab:fab_label="Custom Event"
+            fab:fab_size="mini"
+            android:src="@drawable/ic_visitplace_item"
+            android:layout_gravity="end|bottom"
+            />
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="414dp"
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_container"
+        >
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

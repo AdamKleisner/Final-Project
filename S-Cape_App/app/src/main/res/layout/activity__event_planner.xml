@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity__event_planner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ajp.s_cape_app.Activities.Activity_EventPlanner">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:textColor="@color/SCape_White"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/textView_EventPlanner_Banner" />
+    </FrameLayout>
+
+    <TextView
+        android:text="Name your Trip!"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/SCape_Light_Blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_EventPlanner_Header_TripName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Trip Title"
+        android:gravity="center"
+        android:textColorHint="@color/SCape_Blue"
+        android:ems="10"
+        android:id="@+id/editText_EventPlanner_TripName" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            android:id="@+id/gridView_EventPlanner" />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/SCape_Green"
+            fab:menu_colorPressed="#20a900"
+            fab:menu_colorRipple="@color/SCape_Blue"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="@color/SCape_Grey"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="@color/SCape_Blue"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66AA77"
+            fab:menu_shadowRadius="1dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="1dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_Food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/SCape_Green"
+                fab:fab_colorPressed="#20a900"
+                fab:fab_colorRipple="@color/SCape_Blue"
+                fab:fab_label="Food"
+                fab:fab_size="mini"
+                android:src="@drawable/ic_fooditem" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_Sights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/SCape_Green"
+                fab:fab_colorPressed="#20a900"
+                fab:fab_colorRipple="@color/SCape_Blue"
+                fab:fab_label="Sights"
+                fab:fab_size="mini"
+                android:src="@drawable/ic_sightsitem"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_Trending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/SCape_Green"
+                fab:fab_colorPressed="#20a900"
+                fab:fab_colorRipple="@color/SCape_Blue"
+                fab:fab_label="Trending"
+                fab:fab_size="mini"
+                android:src="@drawable/ic_visitplace_item"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_Custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/SCape_Green"
+                fab:fab_colorPressed="#20a900"
+                fab:fab_colorRipple="@color/SCape_Blue"
+                fab:fab_label="Custom Event"
+                fab:fab_size="mini"
+                android:src="@drawable/ic_customevent_item" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <!--FAB TO COMPLETE THE TRIP-->
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu_COMPLETE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="50dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/SCape_Green"
+            fab:menu_colorPressed="#20a900"
+            fab:menu_colorRipple="@color/SCape_Blue"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/ic_action_check"
+            fab:menu_labels_colorNormal="@color/SCape_Grey"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="@color/SCape_Blue"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#336677"
+            fab:menu_shadowRadius="1dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="1dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_COMPLETE_Finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/SCape_Green"
+                fab:fab_colorPressed="#20a900"
+                fab:fab_colorRipple="@color/SCape_Blue"
+                fab:fab_label="Finish Trip!"
+                fab:fab_size="mini"
+                fab:srcCompat="@android:drawable/ic_menu_help" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </FrameLayout>
+
+</LinearLayout>

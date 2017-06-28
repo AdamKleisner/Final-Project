@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#20bf55</color>
+    <color name="colorBlack">#000000</color>
+    <color name="SCape_Light_Blue">#01baef</color>
+    <color name="SCape_Blue">#0b4f6c</color>
+    <color name="SCape_White">#fbfbff</color>
+    <color name="SCape_Grey">#757575</color>
+    <color name="SCape_Green">#20bf55</color>
+    <color name="Scape_DarkGreen">#228B22</color>
+    <color name="Star_Color">#FFEF3D</color>
+    <color name="Star_pop_red">#AF0034</color>
+</resources>
